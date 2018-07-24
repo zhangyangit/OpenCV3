@@ -10,12 +10,13 @@ import sys
 
 # main()
 if __name__ == "__main__":
-    if len(sys.argv[1]) > 1:
-        # input the image
-        image = cv2.imread(sys.argv[1], cv2.IMREAD_ANYCOLOR)
-    else:
-        print("Usge: python Demo_Test.py imageFile")
 
+#    if len(sys.argv[1]) > 1:
+#        # input the image
+#        image = cv2.imread(sys.argv[1], cv2.IMREAD_ANYCOLOR)
+#    else:
+#        print("Usge: python Demo_Test.py imageFile")
+    image = cv2.imread("../image/a1.jpg", cv2.IMREAD_ANYCOLOR)
     # display the picture
     cv2.imshow('image', image)
     cv2.waitKey(0)
